@@ -1,0 +1,18 @@
+.navbar-fix {
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 70px;
+}
+
+.navbar-fix-closed {
+  left: 60px;
+}
+
+.navbar-fix-open {
+  left: 260px;
+}
+
+nav i {
+  cursor: pointer;
+}

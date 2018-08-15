@@ -1,0 +1,23 @@
+<div [ngClass]="sidebarClass" class="sidebar" *ngIf="isOpen">
+    <ul>
+        <li *ngFor="let menuItem of menuItems">
+            <a [routerLink]="menuItem.link" class="menu-item menu-item-open" [ngStyle]="{backgroundColor:menuItem.background}" (mouseover)="changeColor(menuItem, 'over')"
+                (mouseleave)="changeColor(menuItem, 'leave')" (click)="changeColor(menuItem, 'active')">
+                <i class="fa" [ngClass]="menuItem.icon" [ngStyle]="{color : menuItem.iconColor}"></i>
+                {{menuItem.name}}
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div [ngClass]=" sidebarClass " class="sidebar " *ngIf="!isOpen ">
+    <ul>
+        <li *ngFor="let menuItem of menuItems ">
+            <a [routerLink]="menuItem.link " class="menu-item menu-item-closed " style="text-align: center " [ngStyle]="{backgroundColor:menuItem.background}"
+                (mouseover)="changeColor(menuItem, 'over')" (mouseleave)="changeColor(menuItem,
+            'leave')" (click)="changeColor(menuItem, 'active')">
+                <i class="fa " [ngClass]="menuItem.icon" [ngStyle]="{color : menuItem.iconColor}"></i>
+            </a>
+        </li>
+    </ul>
+</div>

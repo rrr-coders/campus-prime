@@ -1,0 +1,54 @@
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  background-color: #2d323e;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar-open {
+  width: 260px;
+}
+
+.sidebar-closed {
+  width: 60px;
+}
+
+.menu-item {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.menu-item-active {
+  background-color: #03a9f4;
+}
+
+.menu-item-active > i {
+  color: #fff;
+}
+
+.menu-item > i {
+  /* color: #acaeb3; */
+}
+
+.menu-item-open {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.menu-item-open > i {
+  text-align: left;
+  padding-right: 15px;
+}
+
+.menu-item-closed {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.menu-item-closed > i {
+  font-size: 25px;
+}

@@ -1,0 +1,23 @@
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+  background-image: url('../../../../assets/bg/2.jpg');
+  background-size: cover;
+}
+
+.login-container {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 40px 20px;
+}
+
+.heading {
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+}
